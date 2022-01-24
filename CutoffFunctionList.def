@@ -1,0 +1,42 @@
+
+std::vector<std::string> Cutoffs {
+    "fprintf"
+    "logMessage",
+    "::logError",
+    // Printing, debugging, and monitoring
+    "::print(",
+    "g_log",
+    "g_test",
+    "logMsg",
+    "g_print",
+    "::print(",
+    "dwarf",
+    "std::ostream::put",
+    // Internal API that return symbolic data
+    "malloc",
+    "free",
+    "unlink",
+    // Exceptions path
+    "cxa_rethrow",
+    "cxa_begin_catch",
+    "cxa_allocate_exception",
+    "cxa_throw",
+    "cxa_call_unexpected",
+    "cxa_end_catch",
+    "std::runtime_error::runtime_error",
+    "std::logic_error::logic_error",
+    "std::ios_base::failure",
+    "std::__throw_ios_failure",
+    "std::__throw_domain_error",
+    "std::__throw_out_of_range",
+    "std::__throw_length_error",
+    "std::__throw_range_error",
+    "std::__throw_underflow_error",
+    "std::__throw_overflow_error",
+    "std::__throw_logic_error",
+    "__gnu_cxx::__throw_concurrence_lock_error",
+    "Utf8String::fill",    
+    // This call is used to reset a request object across calls
+    "::reset()"
+};
+
